@@ -1,6 +1,6 @@
 # Weather CLI
 
-A colorful, cross-platform command-line weather app built with Python and Rich.
+A colorful, cross-platform command-line weather app.
 
 # Features
 
@@ -8,16 +8,17 @@ A colorful, cross-platform command-line weather app built with Python and Rich.
 - 5-day forecast
 - Colorful terminal UI
 - Fast & lightweight
-- Works on macOS, Linux, and Windows
+- Works on macOS and Linux
 
 # Installation
 
-bash
-git clone https://github.com/Jasonbernard782/weather-cli.git
-cd weather-cli
-python -m venv .venv
+# macOS/ Linux:
+
+git clone git@github.com:Jasonbernard782/weather-cli.git && cd weather-cli
+python3 -m venv .venv
 source .venv/bin/activate
-
-# Windows: .venv\Scripts\activate
-
-pip install -e .
+python -m pip install --upgrade pip setuptools wheel
+pip install .
+cp .env.example .env
+echo "ba8195ae3fff71980febe1b3fb527f80"
+.venv/bin/weather
