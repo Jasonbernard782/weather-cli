@@ -12,19 +12,20 @@ console = Console()
 
 def show_about():
     try:
-        meta = metadata("weather-cli")
+        meta = metadata("weather_cli")
     except PackageNotFoundError:
         console.print("[red]Package metadata not found[/]")
         return
 
     ASCII_LOGO = r"""
-   _      __           __  __           
-  | | /| / /__ ___ _  / /_/ /  ___ ____
-  | |/ |/ / -_) _ `/ / __/ _ \/ -_) __/
-  |__/|__/\__/\_,_/  \__/_//_/\__/_/   
+ Y8b Y8b Y888P                   d8   888                          e88'Y88 888     888
+ Y8b Y8b Y8P   ,e e,   ,"Y88b  d88   888 ee   ,e e,  888,8,      d888  'Y 888     888
+  Y8b Y8b Y   d88 88b "8" 888 d88888 888 88b d88 88b 888 "  888 C8888     888     888
+   Y8b Y8b    888   , ,ee 888  888   888 888 888   , 888         Y888  ,d 888  ,d 888
+    Y8P Y      "YeeP" "88 888  888   888 888  "YeeP" 888          "88,d88 888,d88 888
 """
 
-    console.print(f"[yellow]{ASCII_LOGO}[/yellow]")
+    console.print(f"[magenta]{ASCII_LOGO}[/magenta]")
 
     body = f"""
 [bold cyan]Author:[/] {meta.get("Author", "Unknown")}
@@ -41,22 +42,28 @@ def show_about():
 def show_current(data):
     panel = Panel(
         f"""
-🌡️ Temp: [bold cyan]{data['main']['temp']}°[/]
-🤗 Feels: [cyan]{data['main']['feels_like']}°[/]
-💧 Humidity: [cyan]{data['main']['humidity']}%[/]
+🌡️ [magenta]Temp: [bold cyan]{data['main']['temp']}°[/]
+🤗 [magenta]Feels: [cyan]{data['main']['feels_like']}°[/]
+💧 [magenta]Humidity: [cyan]{data['main']['humidity']}%[/]
 ☁️ {data['weather'][0]['description'].capitalize()}
 """,
         title=f"[yellow]Weather in {data['name']}",
         border_style="blue",
     )
+
     console.print(panel)
 
 
 def show_forecast(data):
-    table = Table(title="5-Day Forecast", header_style="bold magenta")
-    table.add_column("Date")
-    table.add_column("Temp (°)")
-    table.add_column("Condition")
+    table = Table(
+        title="[yellow]5-Day Forecast",
+        border_style="blue",
+        header_style="bold magenta",
+        expand=True,
+    )
+    table.add_column("Date", style="cyan")
+    table.add_column("Temp (°)", style="cyan")
+    table.add_column("Condition", style="cyan")
 
     seen = set()
     for entry in data["list"]:
