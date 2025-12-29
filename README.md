@@ -50,6 +50,6 @@ weather city
 
 weather --forecast city or -f
 
-weather --units metric| imperial
+weather --units metric | imperial
 
 weather --help
