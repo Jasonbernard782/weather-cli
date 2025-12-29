@@ -54,4 +54,4 @@ weather --units metric | imperial
 
 weather --help
 
-<img width="844" height="1016" alt="Screenshot 2025-12-29 at 04 10 46" src="https://github.com/user-attachments/assets/b0f1a7e5-332c-4e6e-b042-0d5ec30cba17" />
+<img width="842" height="1016" alt="Screenshot 2025-12-29 at 04 14 09" src="https://github.com/user-attachments/assets/97670c61-0dc9-442f-981f-2a341eb14dda" />
