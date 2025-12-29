@@ -32,7 +32,7 @@ python3 -m pipx ensurepath
 
 # Get an OpenWeather API Key
 
-Weather-CLI requires an API key from openweathermap.org.api
+Weather-CLI requires an API key from https://openweathermap.org/api
 to fetch live weather data.
 
 - Sign up for a free account
