@@ -53,3 +53,5 @@ weather --forecast city or -f
 weather --units metric | imperial
 
 weather --help
+
+<img width="1692" height="2074" alt="image" src="https://github.com/user-attachments/assets/fdaeb9fb-c588-45f4-9623-8877600e56df" />
