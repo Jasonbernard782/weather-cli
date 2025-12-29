@@ -39,6 +39,7 @@ export OPENWEATHER_API_KEY="your_api_key_here"
 # To make it permanent:
 
 echo 'export OPENWEATHER_API_KEY="your_api_key_here"' >> ~/.zshrc
+
 source ~/.zshrc
 
 # Run Weather-CLI
