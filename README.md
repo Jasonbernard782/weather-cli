@@ -1,8 +1,8 @@
-# Weather CLI
+# Weather CLI:
 
 A colorful, command-line weather app.
 
-# Features
+# Features:
 
 - Current weather by city
 - 5-day forecast
@@ -10,7 +10,7 @@ A colorful, command-line weather app.
 - Fast & lightweight
 - Works on macOS and Linux
 
-# Installation
+# Installation:
 
 # macOS/ Linux:
 
@@ -21,7 +21,7 @@ command -v pipx >/dev/null || (python3 -m pip install --user pipx && python3 -m 
 (Install pipx if not already installed.)
 
 
-# Get an OpenWeather API Key
+# Get an OpenWeather API Key:
 
 Weather-CLI requires an API key from https://openweathermap.org/api
 to fetch live weather data.
@@ -30,9 +30,9 @@ to fetch live weather data.
 
 - Copy your API key
 
-# Set your API key (One-time setup)
+# Set your API key (One-time setup):
 
-# macOS / Linux
+# macOS / Linux:
 
 export OPENWEATHER_API_KEY="your_api_key_here"
 
@@ -42,7 +42,7 @@ echo 'export OPENWEATHER_API_KEY="your_api_key_here"' >> ~/.zshrc
 
 source ~/.zshrc
 
-# Run Weather-CLI
+# Run Weather-CLI:
 
 weather
 
