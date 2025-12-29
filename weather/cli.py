@@ -25,7 +25,7 @@ def show_about():
     Y8P Y      "YeeP" "88 888  888   888 888  "YeeP" 888          "88,d88 888,d88 888
 """
 
-    console.print(f"[magenta]{ASCII_LOGO}[/magenta]")
+    console.print(f"[yellow]{ASCII_LOGO}[/yellow]")
 
     body = f"""
 [bold cyan]Author:[/] {meta.get("Author", "Unknown")}
