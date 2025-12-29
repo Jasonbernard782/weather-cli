@@ -18,17 +18,8 @@ command -v pipx >/dev/null || (python3 -m pip install --user pipx && python3 -m 
 
 (This will install Weather-CLI in an isolated environment. You only need to do this once per machine.)
 
-# Install pipx (if not already installed)
+(Install pipx if not already installed.)
 
-# macOS
-
-brew install pipx
-pipx ensurepath
-
-# Linux
-
-python3 -m pip install --user pipx
-python3 -m pipx ensurepath
 
 # Get an OpenWeather API Key
 
