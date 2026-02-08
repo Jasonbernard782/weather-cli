@@ -1,6 +1,0 @@
-.venv/
-weather_cli.egg-info/
-__pycache__/
-*.pyc
-.env
-
